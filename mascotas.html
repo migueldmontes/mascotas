@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Mascotas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="tienda">
+    <h1>Tienda de Mascotas</h1>
+    
+    <!-- Input para elegir un animal -->
+    <label for="animalInput">¿Qué animal quieres?</label>
+    <input type="text" id="animalInput" placeholder="Escribe perro, gato, canario...">
+    
+    <!-- Botón para enviar -->
+    <button onclick="mostrarAnimal()">Enviar</button>
+    
+    <!-- Div donde se muestra la imagen del animal -->
+    <div id="animalDiv">
+      <img id="animalImg" src="" alt="Imagen del animal" style="display: none;">
+      <p id="animalNombre"></p>
+    </div>
+    
+    <!-- Pie de foto -->
+    <footer>
+      <p id="animalPie"></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
